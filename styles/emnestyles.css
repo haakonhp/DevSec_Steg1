@@ -1,0 +1,27 @@
+article {
+    margin: 5px;
+    display: grid;
+    grid-template-areas:
+    "text replybutton reportbutton"
+    "inputform inputform inputform";
+    grid-template-columns: 4fr 130px 130px;
+    border-bottom: dotted 2px;
+}
+
+.inputForm {
+    grid-area: inputform;
+}
+input[name="text"] {
+    width: 96%;
+}
+.replyButton {
+    grid-area: replybutton;
+}
+
+.reportButton {
+    grid-area: reportbutton;
+}
+
+.text {
+    width: 100%;
+}
